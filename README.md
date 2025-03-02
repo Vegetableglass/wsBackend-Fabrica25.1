@@ -46,7 +46,7 @@ Procurar Personagem: /personagem/ - Mapeado para PersonagemFormView
 Atualizar Personagem: /atualizar_personagem/<int:pk>/ - Mapeado para PersonagemUpdateView
 Deletar Personagem: /deletar_personagem/<int:pk>/ - Mapeado para PersonagemDeleteView
 ```
-## Endpoints para Tarefa
+## Endpoints para Localizações
 ```bash
 Listar Localização: /listar_location/ - Mapeado para LocationListView
 Detalhar Localização: /detalhes_location/<int:pk>/ - Mapeado para LocationDetailView

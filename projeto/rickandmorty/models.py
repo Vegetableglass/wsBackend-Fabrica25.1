@@ -1,3 +1,4 @@
+#personagens
 from django.db import models
 
 class Personagem(models.Model):
@@ -9,8 +10,17 @@ class Personagem(models.Model):
     location = models.CharField(max_length=50)
     
     def __str__(self):
-        return self.nome
-    
-   
+        return (f'nome = {self.nome}, especie = {self.especie}, status = {self.status}, genero = {self.genero}, origem = {self.origem}, localização = {self.location}')
 
-# Create your models here.
+#localização
+class Location(models.Model):
+    nome = models.CharField(max_length=50)
+    tipo = models.CharField(max_length=50)
+    dimensao = models.CharField(max_length=50)
+    
+    def __str__(self):
+        return (f'nome = {self.nome}, tipo = {self.tipo}, dimenção = {self.dimensao}')
+
+
+
+ 
